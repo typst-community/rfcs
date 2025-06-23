@@ -4,7 +4,7 @@ This is a repository for drafting, discussing and preparing community RFCs befor
 ## Contributing
 TBD: The exact process shall be decided on the [official Typst community discord][discord] under 💬 forge > Community.
 
-There's an adapted version of the [rust-lang/rfcs][rust].
+There's a short adapted version of the [rust-lang/rfcs][rust] RFC template for now, but this may change in the future.
 
 ## License
 All RFCs and other content in this repository is dual-licensed under MIT or Apache 2.0 (`SPDX-License-Identifier: MIT OR Apache-2.0`).
