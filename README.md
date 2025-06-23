@@ -9,6 +9,6 @@ There's a short adapted version of the [rust-lang/rfcs][rust] RFC template for n
 ## License
 All RFCs and other content in this repository is dual-licensed under MIT or Apache 2.0 (`SPDX-License-Identifier: MIT OR Apache-2.0`).
 
-[typst]: https:/github.com/typst/typst
+[typst]: https://github.com/typst/typst
 [discord]: https://discord.com/invite/y4Fhb6mvDa
-[rust]: https:/github.com/rust-lang/rfcs
+[rust]: https://github.com/rust-lang/rfcs
