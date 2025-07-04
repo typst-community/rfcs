@@ -34,14 +34,14 @@ It is used to explore the feasibility of RFCs for Typst as a whole and "substant
 ## Glossary
 [Glossary]: #glossary
 
-- Typst:
-  The open source Typst compiler ([typst/typst][typst]).
+- Typst Compiler:
+  The open source Typst compiler ([typst/typst][typst]) maintained by Typst GmbH.
 
 - Typst Community:
-  The community around the aforementioned compiler at large, as well as the unofficial [typst-community][self] organization.
+  The community around the aforementioned compiler at large.
 
 - Community Forge:
-  A forum thread found under `#forge` > `Community` on the [official Typst community Discord][discord].
+  A Discord thread found under `#forge` > `Community` on the [official Typst Discord][discord].
 
 - Typst Forum:
   The [official Typst forum (forum.typst.app)][forum].
@@ -56,7 +56,7 @@ It is used to explore the feasibility of RFCs for Typst as a whole and "substant
 
 - RFC:
   A **r**equest **f**or **c**omments is a public document with the intent to gather input regarding a feature or change of substantial impact.
-  In the context of the Typst community this impact is mostly restricted to community project, but may also impact the Typst compiler itself.
+  In the context of the Typst community this impact is mostly restricted to community project, but may also impact the [Typst compiler][typst] itself.
 
 - FCP:
   The **f**inal **c**omment **p**eriod of an RFC is a period of 10 calendar days after the final decision to merge, close or postpone an RFC in which final concerns can be brought up.
@@ -68,16 +68,16 @@ It is used to explore the feasibility of RFCs for Typst as a whole and "substant
 You need to follow this process if you intend to make "substantial" changes to interfaces or standards used by multiple community projects, or the RFC process itself.
 What constitutes a "substantial" change is evolving based on community norms and varies depending on what part of the ecosystem you are proposing to change, but may include the following.
 
-- Any semantic or syntactic change to the community defined standards or conventions that is not a bug fix.
-- Removing language features widely used by community projects.
-- Changes to the interface between the Typst compiler and community projects.
+- Proposing a standard to be implemented by multiple community projects.
+- Any semantic or syntactic change to already accepted standards or conventions that is not a bug fix.
+- Deprecating or removing an accepted standard used by multiple community projects.
 
 Some changes do not require an RFC:
 
 - Rephrasing, reorganizing, refactoring, or otherwise "changing shape does not change meaning".
 - Additions that strictly improve objective, numerical quality criteria (warning removal, speedup, better platform coverage, more parallelism, trap more errors, etc.)
 - Additions only likely to be _noticed by_ other developers-of-typst, invisible to users-of-typst.
-- Changes to Typst which have been discussed at length on the [Typst issue tracker][typst] and/or [community discord][discord].
+- Changes to the Typst compiler which have been discussed at length on the [Typst issue tracker][typst] and/or [community discord][discord].
 
 If you submit a pull request to implement a new feature without going through the RFC process, it may be closed with a polite request to submit an RFC first.
 
@@ -92,8 +92,8 @@ Laying some groundwork ahead of the RFC can make the process smoother.
 Although there is no single way to prepare for submitting an RFC, it is generally a good idea to pursue feedback from community project developers beforehand, to ascertain that the RFC may be desirable;
 having a consistent positive impact on community projects requires concerted effort toward consensus-building.
 
-The most common preparations for writing and submitting an RFC is discussing the topic in the [Community Forge][discord] or on the [Typst Forum][forum].
-You may file issues on this repository for discussion too, but using the [official community Discord][discord] is generally the best way to get immediate feedback by the maintainers and community members.
+The most common preparations for writing and submitting an RFC is discussing the topic in the Community Forge or on the [Typst Forum][forum].
+You may file issues on this repository for discussion too, but using the [Typst Discord][discord] is generally the best way to get immediate feedback by the maintainers and community members.
 
 As a rule of thumb, receiving encouraging feedback from long-standing community developers, and particularly members of the relevant projects is a good indication that the RFC is worth pursuing.
 
@@ -133,11 +133,7 @@ At that point the RFC is "active" and may be implemented with the goal of eventu
   - Before actually entering FCP, *all* members of the ecosystem team must sign off;
     this is often the point at which many ecosystem team members first review the RFC in full depth.
 - The FCP lasts ten calendar days, so that it is open for at least 5 business days.
-  <!--
-    TODO: We don't have this yet, or rather, there is an unmaintained repository for this.
-    We could potentially ask these to be posted on the discord and post them on the forum.
-  -->
-  It is also advertised widely, e.g. in [This Week in Rust](https://this-week-in-rust.org/).
+  It is also advertised widely, e.g. on the [Typst Forum][forum] and [Typst Discord][discord].
   This way all stakeholders have a chance to lodge any final objections before a decision is reached.
 - In most cases, the FCP period is quiet, and the RFC is either merged or closed.
   However, sometimes substantial new arguments or ideas are raised, the FCP is canceled, and the RFC goes back into development mode.
@@ -157,7 +153,7 @@ While it is not *necessary* that the author of the RFC also write the implementa
 Modifications to "active" RFCs can be done in follow-up pull requests.
 Such PRs should update the RFC to include the new PR link.
 We strive to write each RFC in a manner that it will reflect the final design of the feature;
-but the nature of the process means that we cannot expect every merged RFC to actually reflect what the end result will be at the time of the next major release of community projects or the Typst compiler itself.
+but the nature of the process means that we cannot expect every merged RFC to actually reflect what the end result will be at the time of the next major release of community projects or the [Typst compiler][typst] itself.
 
 In general, once accepted, RFCs should not be substantially changed.
 Only very minor changes should be submitted as amendments.
