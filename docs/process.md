@@ -129,8 +129,7 @@ At that point the RFC is "active" and may be implemented with the goal of eventu
     However, the argument supporting the disposition on the RFC needs to have already been clearly articulated, and there should not be a strong consensus *against* that position outside of the ecosystem team.
     Ecosystem team members use their best judgment in taking this step, and the FCP itself ensures there is ample time and notification for stakeholders to push back if it is made prematurely.
   - For RFCs with lengthy discussion, the motion to FCP is usually preceded by a *summary comment* trying to lay out the current state of the discussion and major tradeoffs/points of disagreement.
-  <!-- TODO: Should this instead just be a majority? -->
-  - Before actually entering FCP, *all* members of the ecosystem team must sign off;
+  - Before actually entering FCP, a *sizable majority* (two thirds) of the ecosystem team must sign off;
     this is often the point at which many ecosystem team members first review the RFC in full depth.
 - The FCP lasts ten calendar days, so that it is open for at least 5 business days.
   It is also advertised widely, e.g. on the [Typst Forum][forum] and [Typst Discord][discord].
@@ -177,11 +176,14 @@ In either case, if the reasoning is not clear from the discussion in thread, the
 [Implementing an RFC]: #implementing-an-rfc
 
 Because the RFCs in this repository are primarily for community standards implementations are usually left to the maintainers of community projects.
+For this reason it's integral that they are part of the revision process of the RFC.
+
+The author of an RFC is not obligated to implement it.
+Of course, the RFC author (like any other developer) is welcome to post implementations for review after the RFC has been accepted.
+
+To make sure different community projects can interoperate based on an RFC's conclusions it will typically be necessary to document the results in an appropriate place as part of the implementation effort.
 
 Every accepted RFC has an associated issue tracking its implementation in this repository, this can be used to link back to project specific issues to get an idea about the current state of the implementation.
-
-This means that the author of an RFC is not obligated to implement it.
-Of course, the RFC author (like any other developer) is welcome to post an implementation for review after the RFC has been accepted.
 
 If you are interested in working on the implementation for an "active" RFC, but cannot determine if someone else is already working on it, feel free to ask (e.g. by leaving a comment on the associated issue).
 
