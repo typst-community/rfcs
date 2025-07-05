@@ -177,11 +177,14 @@ In either case, if the reasoning is not clear from the discussion in thread, the
 [Implementing an RFC]: #implementing-an-rfc
 
 Because the RFCs in this repository are primarily for community standards implementations are usually left to the maintainers of community projects.
+For this reason it's integral that they are part of the revision process of the RFC.
+
+The author of an RFC is not obligated to implement it.
+Of course, the RFC author (like any other developer) is welcome to post implementations for review after the RFC has been accepted.
+
+To make sure different community projects can interoperate based on an RFC's conclusions it will typically be necessary to document the results in an appropriate place as part of the implementation effort.
 
 Every accepted RFC has an associated issue tracking its implementation in this repository, this can be used to link back to project specific issues to get an idea about the current state of the implementation.
-
-This means that the author of an RFC is not obligated to implement it.
-Of course, the RFC author (like any other developer) is welcome to post an implementation for review after the RFC has been accepted.
 
 If you are interested in working on the implementation for an "active" RFC, but cannot determine if someone else is already working on it, feel free to ask (e.g. by leaving a comment on the associated issue).
 
