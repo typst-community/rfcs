@@ -120,6 +120,10 @@ At that point the RFC is "active" and may be implemented with the goal of eventu
   Feel free to reach out to the RFC assignee in particular to get help identifying stakeholders and obstacles.
 - The ecosystem team will discuss the RFC pull request, as much as possible in the comment thread of the pull request itself.
   Offline discussion will be summarized on the pull request comment thread and are generally done within the Community Forge.
+- An RFC may be rejected or postponed early if the ecosystem team decides that not enough members of the team are familiar with the topic to merge it.
+  Such as an RFC about a region specific issue without enough members being familiar with the region.
+  As an example, if less than two thirds of the team are east Asian and the RFC is about CJK specific typography, the team my decide to postpone it and create a region specific team instead.
+  Such issues may arise and will be dealt with when they do.
 - RFCs rarely go through this process unchanged, especially as alternatives and drawbacks are shown. You can make edits, big, and small, to the RFC to clarify or change the design, but make changes as new commits to the pull request, and leave a comment on the pull request explaining your changes.
   Specifically, do not squash commits after they are visible on the pull request if they meaningfully change the semantics of the RFC.
   Squashing typos or formatting changes is OK.
@@ -131,6 +135,8 @@ At that point the RFC is "active" and may be implemented with the goal of eventu
   - For RFCs with lengthy discussion, the motion to FCP is usually preceded by a *summary comment* trying to lay out the current state of the discussion and major tradeoffs/points of disagreement.
   - Before actually entering FCP, a *sizable majority* (two thirds) of the ecosystem team must sign off;
     this is often the point at which many ecosystem team members first review the RFC in full depth.
+    This means that abstentions from the vote have the same effect as a vote against it.
+    Abstentions should be rare and well motivated, e.g. if a member cannot foresee the consequences because they aren't familiar with the topic.
 - The FCP lasts ten calendar days, so that it is open for at least 5 business days.
   It is also advertised widely, e.g. on the [Typst Forum][forum] and [Typst Discord][discord].
   This way all stakeholders have a chance to lodge any final objections before a decision is reached.
