@@ -56,9 +56,9 @@ This section lists the possible language items that can be documented. Until typ
   #show: it => it
   ```
 
-== The reader of docstrings
+= Docstring processors
 
-The reader of docstrings are the _docstring processors_.
+_docstring processors_ parses, checks, and renders docstrings:
 - documentation tools, like `tidy`.
 - analyzers and test frameworks, like `typst-ide`, `tinymist`, and `tytanic`.
 
