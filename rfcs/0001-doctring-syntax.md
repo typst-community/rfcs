@@ -179,7 +179,7 @@ In Issue 1.1, we mentioned that _Docstring processors_ and developers can add de
 Docstring processors may define special show rules to render docstrings. For example, tidy 0.3.0 defines a show rule to render examples:
 
 ```typ
-#show raw.where(lang: "exmaple"): render-example
+#show raw.where(lang: "example"): render-example
 ```
 
 A docstring processor SHOULD not introduce a show rule if some docstring cannot be rendered without the show rule.
