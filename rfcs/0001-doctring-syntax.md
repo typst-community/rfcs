@@ -50,9 +50,9 @@ This section lists the possible language items that can be documented. Until typ
   #show: it => it
   ```
 
-### The reader of docstrings
+## Docstring processors
 
-The reader of docstrings are the _docstring processors_.
+_docstring processors_ parses, checks, and renders docstrings:
 
 - documentation tools, like `tidy`.
 - analyzers and test frameworks, like `typst-ide`, `tinymist`, and `tytanic`.
@@ -136,10 +136,10 @@ In previous discussion, Markdown Syntax and Typst Syntax are taken into consider
 
 ### Issue 1.1: docstrings with compile errors
 
-While a docstring has compile errors, it SHOULD be tolerated when rendering the docstring. Two main reasons can cause "sensible" undefined references:
+While a docstring has compile errors, they SHOULD be tolerated when rendering the docstring. The typicial errors SHOULD be ignored are undefined references. There are three main reasons can cause "sensible" undefined references:
 
-- processor-specific definitions: _Docstring processors_ can add unique definitions to the scope of a docstring. For example, `example` function is defined by tidy, however, it can be not defined by the official docstring processor.
-- definitions in the package to render examples: A common case is that developer would like to create examples with the current definitions provided by the package. However, a definition may be invalid when the developer is editing the code. It is not good if docstrings are not rendered during editing.
+- undefined processor-specific definitions: _Docstring processors_ can add unique definitions to the scope of a docstring. For example, `example` function is defined by tidy, however, it can be not defined by the official docstring processor.
+- undefined definitions from the user modules: A common case is that developer would like to create examples with the current definitions provided by the package. However, a definition may be invalid when the developer is editing the code. It is not good if docstrings are not rendered during editing.
 - backward compatibility issue: people may use an older version of some _docstring processor_ and definitions are not provided in the older version.
 
 The above example indicates that, only a subset of typst syntax is suggested to be used in docstrings, to allow rendering and parsing with compile errors.
@@ -190,7 +190,7 @@ The python-style is not suitable for Typst, so we may only consider putting docu
 
 #### Issue 2.1: block comments
 
-Rust doesn't allow block comments as doc comments. It is also not suitable for Typst. At least the `*` prefix used by js-doc style is a valid prefix for block comments.
+Rust doesn't allow block comments as doc comments. It is also not suitable for Typst. At least the `*` prefix used by js-doc style is a special markup in typst.
 
 #### Issue 2.2: The place of doc comments
 
