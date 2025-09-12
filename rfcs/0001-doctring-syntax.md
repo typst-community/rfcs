@@ -213,9 +213,10 @@ Rust prefixes module-level doc comments with `//!`. The syntax of module-level d
 
 [tinymist.](https://myriad-dreamin.github.io/tinymist/feature/docs.html)
 
-- A doc comment can be started with either `///` or `//` and the comments with same prefix are grouped together as a a single docstring. This is a loosed syntax because of Issue 2: the syntax of doc comments is not yet decided.
 - The docstring is in typst syntax and a docstring can only access the public definitions provided by the current package, if it is in a package.
 - The valid places are limited to only before "Let bindings" and at the start of the "Modules" (Files), to ensure simple migration to official syntax in future.
+  - A doc comment of let bindings can be started with either `///` or `//` and the comments with same prefix are grouped together as a a single docstring. This is a loosed syntax because of Issue 2: the syntax of doc comments is not yet decided.
+  - A doc comment of modules can only start with `///`, because of Issue 2.3: normal comments can occur at the start of the file to include License information.
 
 ## Unresolved questions
 
