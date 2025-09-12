@@ -195,7 +195,7 @@ The python-style is not suitable for Typst, so we may only consider putting docu
 
 === Issue 2.1: block comments
 
-Rust doesn't allow block comments as doc comments. It is also not suitable for Typst. At least the `*` prefix used by js-doc style is a valid prefix for block comments.
+Rust doesn't allow block comments as doc comments. It is also not suitable for Typst. At least the `*` prefix used by js-doc style is a special markup in typst.
 
 === Issue 2.2: The place of doc comments
 
