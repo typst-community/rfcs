@@ -455,7 +455,7 @@ Two main factors can affect the backward compatibility:
 - The typst version to render the docstring.
 - The docstring processor used to process the docstring.
 
-Since the prelude is defined in `typst.toml`, a minimal typst version can be specified, which determines the default prelude and compiler to render the docstring. Besides `min-version`, A `typst-version` is suggested to added to `typst.toml` to tell which typst version ensures to render the typst syntax used by docstring.
+Since the prelude is defined in `typst.toml`, a minimal typst version can be specified, which determines the default prelude and compiler to render the docstring, ensuring to render the typst syntax used by docstring.
 
 ## Discussion: Customizing the docstring handlers
 
