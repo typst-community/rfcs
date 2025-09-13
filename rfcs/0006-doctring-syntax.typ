@@ -451,11 +451,11 @@ Two main factors can affect the backward compatibility:
 
 Since the prelude is defined in `typst.toml`, a minimal typst version can be specified, which determines the default prelude and compiler to render the docstring, ensuring to render the typst syntax used by docstring.
 
-= Discussion: Customizing the docstring handlers
+= Discussion: Customized docstring processor
 
 _Docstring processors_ can add show rules to customize the docstring rendering. In the sample prelude implementation, the prelude can do nothing if the host doesn't implement a tidy defined docs interfaces and the parameter docs are left in the "base docs" and shown to the users.
 
-The best practice or design pattern for _docstring processors_ to customize the docstring handlers is out of the scope of this RFC, which only discusses the syntax of docstrings.
+The best practice or design pattern to customize a docstring processor is out of the scope of this RFC, which only discusses the syntax of docstrings.
 
 = Discussion: Error tolerance
 
