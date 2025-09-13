@@ -415,7 +415,7 @@ Sample prelude implementation:
 #let example(it) = it.text
 #show: it => {
   show ref: it => {
-    if tidy-version >= version(0, 4, 0) {
+    if tidy-version >= version(0, 4, 0) and tidy-version < version(0, 5, 0) {
       tidy-render-reference(it) // Provided by tidy or tinymist processor
     } else {
       it
