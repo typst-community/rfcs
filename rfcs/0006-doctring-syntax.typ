@@ -255,7 +255,7 @@ tinymist doesn't follow that, with three points:
   )) = ((x, y), z)
   ```
 
-  Some people argues that, in-place parameter destructing in API functions is considered.
+  Some people argues that, in-place parameter destructing in API functions is considered as a bad practice.
 
 === Issue 2.4: Module-level doc comments
 
