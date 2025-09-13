@@ -261,7 +261,7 @@ tinymist doesn't follow that, with three points:
 
 Rust prefixes module-level doc comments with `//!`. The syntax of module-level doc comments should consider other plain comments at the start of the file.
 
-- shebang: `#!`. Luckily, it is not a valid comment in Typst.
+- shebang: `#!`. Luckily, it is not a valid syntax in Typst.
 - commented code: A package owner may commented out some code and they may be identified as a module-level doc comment.
 - license: A package owner may would like to add a license at the start of the file and before the module-level doc comments. For example:
   ```typ
