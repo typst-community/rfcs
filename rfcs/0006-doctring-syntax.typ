@@ -473,4 +473,6 @@ If the newline is preserved in the docstring, the documentation in CJK may be re
 
 The content of the above docstring may be "你好\n世界" (Unicode `U+4F60 U+597D U+FF0C U+0A U+4E16 U+754C`) and rendered as "你好， 世界" (Unicode `U+4F60 U+597D U+FF0C U+20 U+4E16 U+754C`).
 
-Left as an unresolved question.
+Since a package may target non-programming users and non-English speakers, the internationalization of docstrings is considered a important issue.
+
+These issues are left as an unresolved in this RFC.
