@@ -201,18 +201,6 @@ Docstring processors may define special show rules to render docstrings. For exa
 #show raw.where(lang: "example"): render-example
 ```
 
-### Issue 1.4: CJK issue
-
-If the newline is preserved in the docstring, the CJK characters may be rendered with a unwanted space.
-
-```typ
-/// 你好，
-/// 世界
-#let id(x) = x
-```
-
-The content of the above docstring may be "你好n世界" (Unicode `U+4F60 U+597D U+FF0C U+0A U+4E16 U+754C`) and rendered as "你好， 世界" (Unicode `U+4F60 U+597D U+FF0C U+20 U+4E16 U+754C`).
-
 ### Issue 2: The syntax of doc comments
 
 The python style is not suitable for Typst, because typst doesn't discard values in python's way. We may only consider putting documentation in comments, either following JsDoc or Rust style. It is not yet decided how doc comments should be written.
@@ -473,10 +461,24 @@ Since the prelude is defined in `typst.toml`, a minimal typst version can be spe
 
 _Docstring processors_ can add show rules to customize the docstring rendering. In the sample prelude implementation, the prelude can do nothing if the host doesn't implement a tidy defined docs interfaces and the parameter docs are left in the "base docs" and shown to the users.
 
+The best practice or design pattern for _docstring processors_ to customize the docstring handlers is out of the scope of this RFC, which only discusses the syntax of docstrings.
+
 ## Discussion: Error tolerance
 
 As discussed in Issue 1.1, the docstrings SHOULD have syntax that can be extracted partial content even if there are compile errors, which improves editing and developer experience. However, this is optional, and may be discussed in future, because "Backward compatibility of syntax" ensures that when the code has correct syntax, the docstring can be rendered determinsitically with backward compatibility.
 
 ## Discussion: Multiple-lingual docstrings and internationalization
 
-Left as an unresolved question.
+If the newline is preserved in the docstring, the documentation in CJK may be rendered with a unwanted space.
+
+```typ
+/// 你好，
+/// 世界
+#let id(x) = x
+```
+
+The content of the above docstring may be "你好n世界" (Unicode `U+4F60 U+597D U+FF0C U+0A U+4E16 U+754C`) and rendered as "你好， 世界" (Unicode `U+4F60 U+597D U+FF0C U+20 U+4E16 U+754C`).
+
+Since a package may target non-programming users and non-English speakers, the internationalization of docstrings is considered a important issue.
+
+These issues are left as an unresolved in this RFC.
