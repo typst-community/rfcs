@@ -481,4 +481,4 @@ The content of the above docstring may be `你好\n世界` (Unicode `U+4F60 U+59
 
 Since a package may target non-programming users and non-English speakers, the internationalization of docstrings is considered a important issue.
 
-These issues are left as an unresolved in this RFC.
+The two issues in this section are left as an unresolved in this RFC.
