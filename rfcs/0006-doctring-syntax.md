@@ -185,10 +185,10 @@ In Issue 1.1, we mentioned that _Docstring processors_ and developers can add de
       /// ```
     let run() = todo()
   
-    return r(
+    return (
       configure: configure,
       run: run,
-    )un
+    )
   }
   #let pkg = new()
   ````
