@@ -112,7 +112,7 @@ At that point the RFC is "active" and may be implemented with the goal of eventu
   Put care into the details: RFCs that do not present convincing motivation, demonstrate lack of understanding of the design's impact, or are disingenuous about the drawbacks or alternatives tend to be poorly-received.
 - Submit a pull request.
   As a pull request the RFC will receive design feedback from the larger community, and the author should be prepared to revise it in response.
-  The pull request should start with `RFC`/`Draft RFC` to clearly distinguish it form non-RFCs.
+  The pull request should start with `RFC`/`Draft RFC` to clearly distinguish it from non-RFCs.
   The PR description should have a link to the markdown document so it can be viewed as a rendered page on your fork.
   You can get do this by going to the file in the PR changes, clicking `View File` and replacing the commit hash with the branch name, this creates a link like so: `https://github.com/<your account>/<your fork>/blob/<your PR branch name>/<your RFC document path>`.
 - Now that your RFC has an open pull request, use the issue number of the PR to rename the file: update your `0000-` prefix to that number.
